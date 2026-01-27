@@ -144,6 +144,7 @@ h2{
   /*background: linear-gradient(180deg, #ffffff00 0%,  #02325c 20%, #02325c 80%, #ffffff00 100%);*/
   border: none;
   background-color: #f2f2f2;
+  
   /*box-shadow:0 0 50px  #fbff00;*/
 }
 #navbar_logo:hover{
@@ -152,6 +153,7 @@ h2{
 }
 #logo_a{
   padding: 0%;
+  margin-left: 1rem;
 }
 
 #e1{
