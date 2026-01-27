@@ -400,10 +400,12 @@ h2{
 
  
   .carousel-control.next{
-    opacity: 0;
+    opacity: 0%;
+    font-size: 30rem;
   }
   .carousel-control.prev{
-    opacity: 0;
+    opacity: 0%;
+    font-size: 30rem;
   }
   iframe{
     width: auto;
