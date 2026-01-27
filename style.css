@@ -310,127 +310,6 @@ h2{
 }
 
 
-
-
-@media screen and (max-width: 1260px) {
-  .topnav .dropbtn:not(.active), .dropdown .dropbtn, .dropdown img{
-    display: none;
-  }
-  #navbar_logo{
-    padding: 0%;
-  }
-  /* Show hamburger on smaller screens */
-  .icon.hamburger{
-    display: block;
-    margin-left: auto;
-  }
-  
-  .dropdown-content {
-    width: auto;
-    min-width: 150px;
-    display: none; /* Alapértelmezés szerint a legördülő menü zárva van */
-  }
-
-  .dropdown:hover .dropdown-content  {
-    display: none; /* Hover nem működik az érintéses eszközökön */
-  }
-
-  .dropdown {
-    width: auto;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .topnav.responsive {
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Váltás oszlop elrendezésre */
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .topnav.responsive .dropdown {
-    float: none;
-    display: block;
-    width: 100%;
-  }
-
-  .topnav.responsive .dropdown-content {
-    position: relative;
-    display: none; /* Alapértelmezés szerint a legördülő menü zárva van */
-  }
-
-  .topnav.responsive .dropdown:hover .dropdown-content {
-    display: none; /* Hover nem működik az érintéses eszközökön */
-  }
-
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-
-  .topnav.responsive .dropdown-content a {
-    display: block;
-    width: 100%;
-  }
-
-  .topnav.responsive .dropdown img {
-    float: none;
-    display: block;
-  }
-
-  .topnav.responsive .topnav a { /* Új stílus biztosítja, hogy a fő elemek egymás alatt legyenek */
-    display: block;
-    width: 100%;
-  }
-
- 
-  .carousel-control.next{
-    opacity: 0%;
-    font-size: 30rem;
-  }
-  .carousel-control.prev{
-    opacity: 0%;
-    font-size: 30rem;
-  }
-  iframe{
-    width: auto;
-    height: 70%;
-    
-  }
-  #round_table{
-    width: 50vh !important;
-    height: auto;
-  }
-  #robot_images{
-    width: 100% !important;
-    height: auto;
-  }
-  #arm_images{
-    width: 100% !important;
-    height: auto;
-  }
-  #round_algorithm{
-    width: 100% !important;
-    height: auto;
-  }
-  
-}
-
 img{
   backdrop-filter: blur(5px); /* Blur effect */
   margin-top: 1rem;
@@ -645,4 +524,125 @@ th{
 #round_table{
   width: 50%;
   height: auto;
+}
+@media screen and (max-width: 1260px) {
+  .topnav .dropbtn:not(.active), .dropdown .dropbtn, .dropdown img{
+    display: none;
+  }
+  #navbar_logo{
+    padding: 0%;
+  }
+  /* Show hamburger on smaller screens */
+  .icon.hamburger{
+    display: block;
+    margin-left: auto;
+  }
+  
+  .dropdown-content {
+    width: auto;
+    min-width: 150px;
+    display: none; /* Alapértelmezés szerint a legördülő menü zárva van */
+  }
+
+  .dropdown:hover .dropdown-content  {
+    display: none; /* Hover nem működik az érintéses eszközökön */
+  }
+
+  .dropdown {
+    width: auto;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Váltás oszlop elrendezésre */
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    display: none; /* Alapértelmezés szerint a legördülő menü zárva van */
+  }
+
+  .topnav.responsive .dropdown:hover .dropdown-content {
+    display: none; /* Hover nem működik az érintéses eszközökön */
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown-content a {
+    display: block;
+    width: 100%;
+  }
+
+  .topnav.responsive .dropdown img {
+    float: none;
+    display: block;
+  }
+
+  .topnav.responsive .topnav a { /* Új stílus biztosítja, hogy a fő elemek egymás alatt legyenek */
+    display: block;
+    width: 100%;
+  }
+
+ 
+  .carousel-control.next{
+    opacity: 0%;
+    font-size: 30rem;
+  }
+  .carousel-control.prev{
+    opacity: 0%;
+    font-size: 30rem;
+  }
+  iframe{
+    width: auto;
+    height: 70%;
+    
+  }
+  #round_table{
+    width: 50vh !important;
+    height: auto;
+  }
+  #robot_images{
+    width: 100% !important;
+    height: auto;
+  }
+  #arm_images{
+    width: 100% !important;
+    height: auto;
+  }
+  #round_algorithm{
+    width: 100% !important;
+    height: auto;
+  }
+  table{
+    margin: 2px;
+  }
+  
 }

@@ -57,15 +57,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Close dropdowns when clicking outside
+    // Close dropdowns when clicking outside on mobile/touch devices
     document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            dropdowns.forEach(function(dropdown) {
-                var content = dropdown.querySelector('.dropdown-content');
-                if (content) {
-                    content.style.display = 'none';
-                }
-            });
+        // Only close dropdowns on mobile/touch devices or when in responsive mode
+        if (window.innerWidth <= 1260 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            if (!e.target.closest('.dropdown')) {
+                dropdowns.forEach(function(dropdown) {
+                    var content = dropdown.querySelector('.dropdown-content');
+                    if (content) {
+                        content.style.display = 'none';
+                    }
+                });
+            }
         }
     });
 });
