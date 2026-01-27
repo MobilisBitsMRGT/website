@@ -21,3 +21,51 @@ function makeResponsive(btn) {
         }
     }
 }
+
+// Handle dropdown menus on touch devices
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(function(dropdown) {
+        var dropbtn = dropdown.querySelector('.dropbtn');
+        var content = dropdown.querySelector('.dropdown-content');
+        
+        if (dropbtn && content) {
+            dropbtn.addEventListener('click', function(e) {
+                // Check if we're on a touch device or mobile view
+                if (window.innerWidth <= 1260 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    
+                    // Close all other dropdowns
+                    dropdowns.forEach(function(otherDropdown) {
+                        if (otherDropdown !== dropdown) {
+                            var otherContent = otherDropdown.querySelector('.dropdown-content');
+                            if (otherContent) {
+                                otherContent.style.display = 'none';
+                            }
+                        }
+                    });
+                    
+                    // Toggle current dropdown
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                }
+            });
+        }
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(function(dropdown) {
+                var content = dropdown.querySelector('.dropdown-content');
+                if (content) {
+                    content.style.display = 'none';
+                }
+            });
+        }
+    });
+});

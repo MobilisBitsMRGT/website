@@ -330,7 +330,7 @@ h2{
   }
 
   .dropdown:hover .dropdown-content  {
-    display: block; /* Amikor az egér a legördülő elem fölött van, jelenítse meg */
+    display: none; /* Hover nem működik az érintéses eszközökön */
   }
 
   .dropdown {
@@ -372,7 +372,7 @@ h2{
   }
 
   .topnav.responsive .dropdown:hover .dropdown-content {
-    display: block; /* Amikor az egér a legördülő elem fölött van, jelenítse meg */
+    display: none; /* Hover nem működik az érintéses eszközökön */
   }
 
   .topnav.responsive .dropdown .dropbtn {
@@ -412,6 +412,14 @@ h2{
     width: 50vh !important;
     height: auto;
   }
+  #robot_images{
+    width: 100% !important;
+    height: auto;
+  }
+  #arm_images{
+    width: 100% !important;
+    height: auto;
+  }
   
 }
 
@@ -440,9 +448,11 @@ img{
 }
 #round_images{
   height: 70%;
-  width: auto;
+  width: 100%;
   border: none;
   border-radius: 0px;
+  object-fit: contain;
+  display: block;
 }
 
 @keyframes borderAnimation {
@@ -475,8 +485,8 @@ img{
   
 }
 #robot_images{
-  height: 50vh;
-  width: auto;
+  height: auto;
+  width: 50%;
   border: none;
 }
 iframe{
