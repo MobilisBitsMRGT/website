@@ -177,7 +177,7 @@ function updateTransform() {
 function startAuto(){
     stopAuto(); // Stop korábbi időzítőt
 
-    autoDuration = AUTO_MIN + Math.random() * (AUTO_MAX - AUTO_MIN);
+    autoDuration = 8000;
     autoStartTime = Date.now();
 
     /* Progressbar reset */
